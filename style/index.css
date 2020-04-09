@@ -25,9 +25,53 @@ time, mark, audio, video {
 
 *, *::before, *::after {
     box-sizing: border-box;
-  
+    
   }
+.head {
+    background-color: brown;
+}
 
+.top {
+    text-align: left;
+    display: flex;
+    align-content: space-between;
+    margin: .5% .5% 5% .5%;
+}
+h1 {
+    padding: 0%;
+    margin: 2%;
+}
+
+.topwords {
+    padding: 5%;
+    border: dotted black 2px;
+    display: flex;
+    flex-direction: column;
+    
+}
+p {
+    text-align: left;
+    
+    display: flex;
+    flex-flow: nowrap;
+}
+
+.Probutton{
+font-family: 'Work Sans', sans-serif;
+font-weight: 400;
+color: red;
+background-color: aqua;
+width: 40%;
+height: 15%;
+text-align: center;
+margin: 2% 0 2% 0;
+ }
+ .smallbutton {
+     margin: 5%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+ }
   body {
     margin: 0;
     font-family: 'Work Sans', sans-serif;
@@ -39,7 +83,55 @@ time, mark, audio, video {
   .hero {
       width: 50%;
   }
+.card {
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    text-align: center;   
+}
+.card2 {
+
+    display: flex;
+    flex-flow: column;
+    text-align: center;   
+}
+
+  .pro-img{
+      width: 80%;
+      margin: 10%;
+      display: flex;
+      justify-content: space-around;
+  }
+  .projects {
+      margin: 5%;
+      border: solid black 4px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .projects2 {
+    margin: 5%;
+    border: solid black 4px;
+    display: flex;
+    flex-direction: row;
+}
+
   nav ul {
     display: flex;
-    justify-content: space-around; 
+    flex-direction: row; 
+    justify-content: start;
+  }
+
+  a {
+      margin: 0 5% 2% 5%;
+  }
+
+  footer {
+      padding: 10%;
+      background-color: aqua;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
   }
