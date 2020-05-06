@@ -1,1 +1,284 @@
 /* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html{
+    font-size:62.5%; /*62.5% means that 10px = 1 rem */
+  }
+
+*, *::before, *::after {
+box-sizing: border-box;
+color: pink;
+font-size: 2rem;
+}
+.head {
+background-color: rgb(42, 67, 165);
+
+}
+li , a , button {
+    font-family: "" , sans-serif;
+    font-weight: 500;
+    font-size:  1.6rem; 
+    text-decoration: none;
+    margin: .5%;
+}
+
+.Navlinks{
+    font-size: 21;
+    display: flex;
+    justify-content: flex-start;
+    padding: 3% 5%;
+   list-style: none;
+
+}
+
+Navlinks li{
+    display: inline-block;
+    padding: 0  2rem;
+    
+    }
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.top {
+text-align: left;
+display: flex;
+align-content: space-between;
+margin: .5% .5% 5% .5%;
+}
+
+.top p {
+font-size:  1.6rem;
+}
+h1 {
+padding: 2%;
+font-size: 2.5rem;
+font-weight: 600;
+}
+
+.topwords {
+padding: 10% 5% 5% 5%;
+display: flex;
+flex-direction: column;
+
+}
+p {
+
+    display: flex;
+    justify-content: center;
+    }
+
+.Probutton{
+color: rgb(255, 153, 0);
+background-color: rgb(48, 27, 108);
+border: none;
+border-radius: .5rem;
+width: 50%;
+text-align: center;
+margin: 2% 0 2% 0;
+padding: 2%;
+
+}
+
+
+body {
+margin: 0;
+font-family: 'Work Sans', sans-serif;
+font-weight: 400;
+position: relative;
+top: 0px;
+}
+
+.hero {
+    width: 50%;
+}
+.card {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+/*text-align: center;*/  
+}
+
+.card2 {
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+.card p {
+    text-decoration: underline;
+}
+.card2 p {
+    text-decoration: underline;
+}
+
+.pro-img{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.projects {
+    margin: 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+    
+    
+}
+a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       margin: -10%;
+        
+    
+}
+.projects2 { 
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+
+}
+
+nav ul {
+display: flex;
+flex-direction: row; 
+justify-content: start;
+}
+
+.Navbutton {
+padding: .9rem 2.5 rem;
+background-color: rgba(0,136,169,1);
+border: none;
+border-radius: .5rem;
+}
+
+
+
+footer {
+    padding: 5%;
+    background-color:  rgba(0,136,169,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    
+}
+h3 {
+    font-size: 3rem;
+    padding: 5%;
+}
+
+.card-btn {
+    color: red;
+    border: none;
+    border-radius: .5rem;
+
+}
+
+
+
+/*Tablet size*/
+@media (max-width: 800px){
+    * {
+        color: royalblue;
+    }
+   .card p {
+       font-weight: 800;
+   }
+   .card2 p {
+    font-weight: 800;
+}
+  }
+
+
+  /*Phone*/
+  @media (max-width: 450px){
+      * {
+          color: red;
+      }
+.head {
+    text-align: center;
+}
+Navlinks{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+      .top {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: .5% .5% 5% .5%;
+        }
+    .projects{
+        min-width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:  5%;
+        
+        
+    }
+    .projects2{
+        min-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:  5%;
+    }
+        
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           margin: 5%;
+            
+        
+    }
+    .hero {
+        width: 90%;
+    }
+    .topwords { 
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        
+    }
+}
+  
